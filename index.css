@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+* {
+  font-family: Raleway;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+  outline: none !important;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0 10% !important;
+}
+
+ul {
+  list-style: circle;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+li::marker {
+  color: black;
+}
+
+p {
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  color: rgb(102, 103, 102);
+  word-break: break-word;
+  margin-bottom: 1rem;
+}
+
+.headLine {
+  width: 2px;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  height: 120px;
+  background-color: rgb(41, 41, 41);
+}
+
+.header {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  direction: ltr;
+  margin-bottom: 2rem;
+  position: relative;
+  text-align: center;
+}
+
+.firstName {
+  font-weight: 300;
+  text-transform: uppercase;
+  word-break: break-word;
+  color: rgb(62, 62, 62);
+  font-size: 3.5rem;
+  line-height: 1.68;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.5rem;
+  direction: ltr;
+}
+
+.lastName {
+  font-weight: 700;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  word-break: break-word;
+  padding-right: 2rem;
+  color: rgb(62, 62, 62);
+  line-height: 1.09;
+  letter-spacing: 0.2rem;
+  direction: ltr;
+}
+
+.jobTitle {
+  padding-right: 0;
+  margin-top: 2rem;
+  color: rgb(41, 41, 41);
+  
+  span {
+    padding-left: 1rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    word-break: break-word;
+    direction: ltr;
+    color: rgb(76, 74, 74);
+    font-size: 1.5rem;
+  }
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  max-height: 270px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+.middleLine {
+  width: 2px;
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+  height: 60px;
+  background-color: rgb(41, 41, 41);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgb(62, 62, 62);
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a p {
+  word-break: break-word;
+  color: rgb(102, 103, 102);
+  text-decoration: none;
+}
+
+a:hover p {
+  color: rgb(41, 41, 41);
+}
+
+.list-item {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: 1rem;
+  &:not(:last-child) {
+    border-bottom: 2px solid rgb(35, 31, 32);
+  }
+}
+
+.title {
+  width: 100%;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  border-bottom: 1px solid rgb(35, 31, 32);
+  padding-top: 0;
+  padding-bottom: 2rem;
+  color: rgb(34, 33, 33);
+  letter-spacing: 0.05rem;
+  margin-bottom: 1rem;
+}
+
+.personal-details {
+  .title {
+    padding-top: 2rem;
+  }
+}
+
+.bullet {
+  position: relative;
+  i {
+    font-size: 1.3rem;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    width: 2px;
+    height: 70%;
+    background-color: #292929;
+    margin-top: 2rem;
+  }
+}
+
+.record {
+  padding-top: 1rem;
+  p {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.33;
+    color: rgb(102, 103, 102);
+    word-break: break-word;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+li {
+  font-family: Raleway;
+  line-height: 1.33;
+  font-size: 1.2rem;
+  color: rgb(123, 123, 123);
+  margin-bottom: 0.5rem;
+}
+
+span {
+  color: rgb(102, 103, 102);
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: 0.05rem;
+}
+
+.btn-group-fab {
+  position: fixed;
+  width: 50px;
+  height: auto;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+}
+
+.btn-group-fab div {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.btn-group-fab .btn {
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 4px auto;
+  background-color: rgb(62, 62, 62);
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-group-fab .btn:hover {
+  background-color: rgb(41, 41, 41);
+  transform: scale(1.1);
+}
+
+.btn-group-fab .btn i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0mm !important;
+  }
+  
+  html {
+    font-size: 12px;
+  }
+  
+  .header {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+  
+  ul li {
+    margin-left: 1rem;
+  }
+  
+  .btn-group-fab {
+    display: none;
+  }
+}
+
+/* Resto de tu CSS */
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  margin-bottom: 30px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  margin-bottom: 10px;
+}
+
+.contact-info a,
+.social-links a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.contact-info a:hover,
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Section styles */
+section {
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* List styles */
+li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Job styles */
+.job {
+  margin-bottom: 20px;
+}
+
+.job span {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Project styles */
+.project {
+  margin-bottom: 20px;
+}
+
+.project p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Education styles */
+.education-item {
+  margin-bottom: 15px;
+}
+
+.education-item p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Print styles */
+@media print {
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .btn-group-fab {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+}
+
+/* Print button */
+.btn-group-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.btn-group-fab .btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0066cc;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-group-fab .btn:hover {
+  transform: scale(1.1);
+  background-color: #0052a3;
+}
