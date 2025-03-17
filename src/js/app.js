@@ -109,9 +109,11 @@ const resumeData = {
           period: "Apr 2019 - Jun 2022",
           location: "San Francisco, United States",
           achievements: [
-            "Lideré un equipo de 5 desarrolladores en la implementación de una plataforma de procesamiento de datos que maneja 5TB diarios",
-            "Diseñé e implementé una arquitectura de microservicios que redujo la complejidad del sistema en un 40%",
-            "Desarrollé un sistema de monitoreo en tiempo real que mejoró la visibilidad de la plataforma y redujo incidentes en un 45%",
+            "Lideré la migración de la aplicación móvil de Ionic 3 a Ionic 4, mejorando el rendimiento y la mantenibilidad del código",
+            "Diseñé e implementé un pipeline de CI/CD utilizando Bitrise para automatizar el despliegue en App Store y Google Play Store",
+            "Desarrollé un sistema de notificaciones push utilizando Firebase Cloud Messaging, aumentando la retención de usuarios en un 30%",
+            "Implementé APIs GraphQL y RESTful utilizando Node.js/TypeScript y Python/Flask, mejorando la eficiencia de las consultas",
+            "Integré servicios de AWS (Lambda, S3, CloudWatch) y Solr para optimizar la búsqueda y el procesamiento de datos",
             "Mentoreé a 3 desarrolladores junior, ayudándoles a alcanzar el nivel senior en 12 meses"
           ]
         },
@@ -121,9 +123,10 @@ const resumeData = {
           period: "Jun 2018 - Dec 2018",
           location: "Bogotá, Colombia",
           achievements: [
-            "Desarrollé una PWA que alcanzó más de 10,000 usuarios activos en 3 meses",
-            "Implementé un sistema de notificaciones push que mejoró la retención de usuarios en un 25%",
-            "Optimicé el rendimiento de aplicaciones Ruby on Rails reduciendo el tiempo de carga en un 35%"
+            "Colaboré en el desarrollo de una PWA utilizando Angular/Ionic y TypeScript, alcanzando más de 10,000 usuarios activos",
+            "Implementé funcionalidades de notificaciones push utilizando Firebase, mejorando la retención de usuarios",
+            "Contribuí a la optimización de aplicaciones Ruby on Rails, implementando técnicas de caching y mejorando el rendimiento",
+            "Participé en el desarrollo de nuevas características y corrección de bugs en aplicaciones web y móviles"
           ]
         }
       ]
