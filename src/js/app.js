@@ -1,272 +1,266 @@
 // Resume Data
 const resumeData = {
-  personalInfo: {
-    name: "Juan David Jaramillo Zúñiga",
-    role: "Senior Software Engineer | Data Engineering & Cloud Architecture",
-    contact: {
-      email: "jdjaramillo@gmail.com",
-      phone: "+57 300 000 0000",
-      location: "Medellín, Colombia",
-      linkedin: "linkedin.com/in/jdjaramillo",
-      github: "github.com/jdjaramillo"
+  name: "Juan David Jaramillo Zúñiga",
+  role: "Senior Software Engineer | Data Engineering & Cloud Architecture",
+  contact: {
+    email: {
+      label: "Email",
+      value: "djaramilloj1@gmail.com",
+      href: "mailto:djaramilloj1@gmail.com"
+    },
+    phone: {
+      label: "Phone",
+      value: "(+57)3113768003"
+    },
+    github: {
+      label: "GitHub",
+      value: "https://github.com/djaramilloj",
+      href: "https://github.com/djaramilloj"
+    },
+    linkedin: {
+      label: "LinkedIn",
+      value: "www.linkedin.com/in/djaramilloj",
+      href: "https://www.linkedin.com/in/djaramilloj"
+    },
+    languages: {
+      label: "Languages",
+      value: "Spanish (Native), English (Professional)"
     }
   },
-  
-  summary: `Senior Software Engineer with extensive experience in Data Engineering and Cloud Architecture. 
-  Proven track record in designing and implementing scalable data solutions, with expertise in cloud technologies 
-  and distributed systems. Passionate about solving complex problems and delivering high-impact solutions.`,
-  
-  skills: {
-    coreTechnologies: [
-      "Python (Expert)",
-      "Java (Advanced)",
-      "SQL (Expert)",
-      "JavaScript/TypeScript",
-      "Scala",
-      "Shell Scripting"
-    ],
-    frameworksTools: [
-      "Apache Spark",
-      "Airflow",
-      "Docker",
-      "Kubernetes",
-      "FastAPI",
-      "Spring Boot",
-      "React/Vue.js"
-    ],
-    cloudInfrastructure: [
-      "AWS (Certified Solutions Architect)",
-      "GCP (Professional Data Engineer)",
-      "Azure",
-      "Terraform",
-      "CI/CD",
-      "Microservices Architecture"
-    ]
-  },
-  
-  experience: [
-    {
-      title: "Senior Data Engineer",
-      company: "Tech Company",
-      period: "2021 - Present",
-      location: "Medellín, Colombia",
-      achievements: [
-        "Led the design and implementation of data pipelines processing 500GB+ daily",
-        "Reduced processing costs by 40% through optimization of Spark jobs",
-        "Architected and deployed cloud-native data solutions using AWS and GCP",
-        "Mentored junior engineers and established best practices for the team"
+  sections: {
+    technicalSkills: {
+      title: "TECHNICAL EXPERTISE",
+      subsections: {
+        coreTechnologies: {
+          title: "Core Technologies",
+          items: [
+            "Python (Expert)",
+            "Java (Advanced)",
+            "SQL (Expert)",
+            "JavaScript/TypeScript",
+            "Scala",
+            "Shell Scripting"
+          ]
+        },
+        frameworksTools: {
+          title: "Frameworks & Tools",
+          items: [
+            "Apache Spark",
+            "Airflow",
+            "Docker",
+            "Kubernetes",
+            "FastAPI",
+            "Spring Boot",
+            "React/Vue.js"
+          ]
+        },
+        cloudInfrastructure: {
+          title: "Cloud & Infrastructure",
+          items: [
+            "AWS (Certified Solutions Architect)",
+            "GCP (Professional Data Engineer)",
+            "Azure",
+            "Terraform",
+            "CI/CD",
+            "Microservices Architecture"
+          ]
+        }
+      }
+    },
+    experience: {
+      title: "PROFESSIONAL EXPERIENCE",
+      items: [
+        {
+          title: "Senior Data Engineer",
+          company: "Tech Company",
+          period: "2021 - Present",
+          location: "Medellín, Colombia",
+          achievements: [
+            "Led the design and implementation of data pipelines processing 500GB+ daily",
+            "Reduced processing costs by 40% through optimization of Spark jobs",
+            "Architected and deployed cloud-native data solutions using AWS and GCP",
+            "Mentored junior engineers and established best practices for the team"
+          ]
+        },
+        {
+          title: "Software Engineer",
+          company: "Another Tech Company",
+          period: "2019 - 2021",
+          location: "Bogotá, Colombia",
+          achievements: [
+            "Developed and maintained microservices using Spring Boot and Kubernetes",
+            "Implemented real-time data processing pipelines using Apache Kafka",
+            "Improved system reliability by implementing comprehensive monitoring",
+            "Collaborated with cross-functional teams to deliver critical features"
+          ]
+        }
       ]
     },
-    {
-      title: "Software Engineer",
-      company: "Another Tech Company",
-      period: "2019 - 2021",
-      location: "Bogotá, Colombia",
-      achievements: [
-        "Developed and maintained microservices using Spring Boot and Kubernetes",
-        "Implemented real-time data processing pipelines using Apache Kafka",
-        "Improved system reliability by implementing comprehensive monitoring",
-        "Collaborated with cross-functional teams to deliver critical features"
-      ]
-    }
-  ],
-  
-  projects: [
-    {
-      name: "Data Processing Platform",
-      technologies: "Python, Apache Spark, AWS, Airflow",
-      description: "Designed and implemented a scalable data processing platform handling millions of records daily",
-      highlights: [
-        "Implemented fault-tolerant architecture",
-        "Reduced processing time by 60%",
-        "Automated deployment using Terraform"
+    projects: {
+      title: "NOTABLE PROJECTS",
+      items: [
+        {
+          name: "Data Processing Platform",
+          technologies: "Python, Apache Spark, AWS, Airflow",
+          description: "Designed and implemented a scalable data processing platform handling millions of records daily",
+          highlights: [
+            "Implemented fault-tolerant architecture",
+            "Reduced processing time by 60%",
+            "Automated deployment using Terraform"
+          ]
+        }
       ]
     },
-    {
-      name: "Real-time Analytics Dashboard",
-      technologies: "React, FastAPI, PostgreSQL, Redis",
-      description: "Built a real-time analytics dashboard for monitoring system metrics",
-      highlights: [
-        "Implemented WebSocket for real-time updates",
-        "Designed responsive UI with Material-UI",
-        "Optimized database queries for performance"
+    summary: {
+      title: "PROFESSIONAL SUMMARY",
+      content: "Senior Software Engineer with extensive experience in Data Engineering and Cloud Architecture. " +
+              "Proven track record in designing and implementing scalable data solutions, with expertise in cloud technologies " +
+              "and distributed systems. Passionate about solving complex problems and delivering high-impact solutions."
+    },
+    education: {
+      title: "EDUCATION",
+      items: [
+        {
+          degree: "Master's in Computer Science",
+          institution: "Universidad Nacional de Colombia",
+          period: "2018 - 2020",
+          location: "Medellín, Colombia"
+        },
+        {
+          degree: "Bachelor's in Systems Engineering",
+          institution: "Universidad de Antioquia",
+          period: "2014 - 2018",
+          location: "Medellín, Colombia"
+        }
       ]
     }
-  ],
-  
-  education: [
-    {
-      degree: "Master's in Computer Science",
-      institution: "Universidad Nacional de Colombia",
-      period: "2018 - 2020",
-      location: "Medellín, Colombia"
-    },
-    {
-      degree: "Bachelor's in Systems Engineering",
-      institution: "Universidad de Antioquia",
-      period: "2014 - 2018",
-      location: "Medellín, Colombia"
-    }
-  ]
+  }
 };
 
-// Components
-class Header {
-  constructor(personalInfo) {
-    this.personalInfo = personalInfo;
-  }
+// Initialize the page
+function initializePage() {
+  // Set page title and header
+  document.getElementById('page-title').textContent = `${resumeData.name} - Resume`;
+  document.getElementById('full-name').textContent = resumeData.name;
+  document.getElementById('role').textContent = resumeData.role;
+  
+  // Initialize contact info
+  initializeContact();
+  
+  // Initialize all sections
+  initializeSections();
+}
 
-  render() {
-    const { name, role, contact } = this.personalInfo;
+function initializeContact() {
+  const contactInfo = document.getElementById('contact-info');
+  contactInfo.innerHTML = '';
+  
+  Object.entries(resumeData.contact).forEach(([key, item]) => {
+    const div = document.createElement('div');
+    const label = document.createElement('span');
+    label.className = 'label';
+    label.textContent = item.label + ':';
     
-    document.querySelector('.name').textContent = name;
-    document.querySelector('.role').textContent = role;
+    const value = item.href 
+      ? document.createElement('a') 
+      : document.createElement('span');
     
-    const contactHTML = `
-      <div><i class="fas fa-envelope"></i> <a href="mailto:${contact.email}">${contact.email}</a></div>
-      <div><i class="fas fa-phone"></i> ${contact.phone}</div>
-      <div><i class="fas fa-map-marker-alt"></i> ${contact.location}</div>
-      <div><i class="fab fa-linkedin"></i> <a href="https://${contact.linkedin}" target="_blank">${contact.linkedin}</a></div>
-      <div><i class="fab fa-github"></i> <a href="https://${contact.github}" target="_blank">${contact.github}</a></div>
-    `;
+    if (item.href) {
+      value.href = item.href;
+      value.target = '_blank';
+    }
+    value.textContent = item.value;
     
-    document.querySelector('.contact-info').innerHTML = contactHTML;
-  }
+    div.appendChild(label);
+    div.appendChild(value);
+    contactInfo.appendChild(div);
+  });
 }
 
-class Skills {
-  constructor(skills) {
-    this.skills = skills;
+function initializeSections() {
+  // Initialize Professional Summary
+  const summarySection = document.getElementById('professional-summary');
+  if (summarySection) {
+    summarySection.querySelector('h2').textContent = resumeData.sections.summary.title;
+    document.getElementById('profile-summary').textContent = resumeData.sections.summary.content;
   }
 
-  render() {
-    const { coreTechnologies, frameworksTools, cloudInfrastructure } = this.skills;
+  // Initialize Technical Skills
+  const skillsSection = document.getElementById('technical-skills');
+  if (skillsSection) {
+    skillsSection.querySelector('h2').textContent = resumeData.sections.technicalSkills.title;
+    const subsections = resumeData.sections.technicalSkills.subsections;
     
-    document.getElementById('programming-languages').innerHTML = this.createList(coreTechnologies);
-    document.getElementById('frameworks-libraries').innerHTML = this.createList(frameworksTools);
-    document.getElementById('architecture-cloud').innerHTML = this.createList(cloudInfrastructure);
-  }
-
-  createList(items) {
-    return items.map(item => `<li>${item}</li>`).join('');
-  }
-}
-
-class Experience {
-  constructor(experience) {
-    this.experience = experience;
-  }
-
-  render() {
-    const experienceHTML = this.experience.map(job => `
-      <div class="job">
-        <div class="job-header">
-          <h3>${job.title} at ${job.company}</h3>
-          <div class="job-period">${job.period} | ${job.location}</div>
-        </div>
-        <ul>
-          ${job.achievements.map(achievement => `<li>${achievement}</li>`).join('')}
-        </ul>
-      </div>
-    `).join('');
-
-    document.getElementById('experience').innerHTML = experienceHTML;
-  }
-}
-
-class Projects {
-  constructor(projects) {
-    this.projects = projects;
-  }
-
-  render() {
-    const projectsHTML = this.projects.map(project => `
-      <div class="project">
-        <h3>${project.name}</h3>
-        <div class="project-tech">${project.technologies}</div>
-        <p>${project.description}</p>
-        <ul>
-          ${project.highlights.map(highlight => `<li>${highlight}</li>`).join('')}
-        </ul>
-      </div>
-    `).join('');
-
-    document.getElementById('projects').innerHTML = projectsHTML;
-  }
-}
-
-class Education {
-  constructor(education) {
-    this.education = education;
-  }
-
-  render() {
-    const educationHTML = this.education.map(edu => `
-      <div class="education-item">
-        <h3>${edu.degree}</h3>
-        <div class="education-period">${edu.institution} | ${edu.period}</div>
-        <div class="education-location">${edu.location}</div>
-      </div>
-    `).join('');
-
-    document.getElementById('education').innerHTML = educationHTML;
-  }
-}
-
-// Main Resume Class
-class Resume {
-  constructor(data) {
-    this.data = data;
-    this.components = {
-      header: new Header(data.personalInfo),
-      skills: new Skills(data.skills),
-      experience: new Experience(data.experience),
-      projects: new Projects(data.projects),
-      education: new Education(data.education)
-    };
-  }
-
-  render() {
-    try {
-      // Render all components
-      Object.entries(this.components).forEach(([name, component]) => {
-        try {
-          component.render();
-          console.log(`✅ ${name} component rendered successfully`);
-        } catch (error) {
-          console.error(`Error rendering ${name} component:`, error);
-        }
-      });
-      
-      // Set summary
-      const summaryElement = document.getElementById('profile-summary');
-      if (summaryElement) {
-        summaryElement.textContent = this.data.summary;
+    Object.entries(subsections).forEach(([key, subsection]) => {
+      const sectionElement = document.getElementById(key.replace(/([A-Z])/g, '-$1').toLowerCase());
+      if (sectionElement) {
+        sectionElement.querySelector('h3').textContent = subsection.title;
+        const ul = sectionElement.querySelector('ul');
+        ul.innerHTML = subsection.items.map(item => `<li>${item}</li>`).join('');
       }
-      
-      // Initialize print functionality
-      this.initializePrint();
-    } catch (error) {
-      console.error('Error rendering resume:', error);
-    }
+    });
   }
 
-  initializePrint() {
-    const printButton = document.querySelector('.print-button button');
-    if (printButton) {
-      printButton.addEventListener('click', () => {
-        window.print();
-      });
-    }
+  // Initialize Experience
+  const experienceSection = document.getElementById('professional-experience');
+  if (experienceSection) {
+    experienceSection.querySelector('h2').textContent = resumeData.sections.experience.title;
+    const experienceContainer = document.getElementById('experience');
+    experienceContainer.innerHTML = resumeData.sections.experience.items
+      .map(job => `
+        <div class="job">
+          <div class="job-header">
+            <h3>${job.title} at ${job.company}</h3>
+            <div class="job-period">${job.period} | ${job.location}</div>
+          </div>
+          <ul>
+            ${job.achievements.map(achievement => `<li>${achievement}</li>`).join('')}
+          </ul>
+        </div>
+      `)
+      .join('');
+  }
+
+  // Initialize Projects
+  const projectsSection = document.getElementById('projects');
+  if (projectsSection) {
+    projectsSection.querySelector('h2').textContent = resumeData.sections.projects.title;
+    const projectsContainer = document.getElementById('projects-container');
+    projectsContainer.innerHTML = resumeData.sections.projects.items
+      .map(project => `
+        <div class="project">
+          <h3>${project.name}</h3>
+          <div class="project-tech">${project.technologies}</div>
+          <p>${project.description}</p>
+          <ul>
+            ${project.highlights.map(highlight => `<li>${highlight}</li>`).join('')}
+          </ul>
+        </div>
+      `)
+      .join('');
+  }
+
+  // Initialize Education
+  const educationSection = document.getElementById('education');
+  if (educationSection) {
+    educationSection.querySelector('h2').textContent = resumeData.sections.education.title;
+    const educationContainer = document.getElementById('education-container');
+    educationContainer.innerHTML = resumeData.sections.education.items
+      .map(edu => `
+        <div class="education-item">
+          <h3>${edu.degree}</h3>
+          <div class="education-period">${edu.institution} | ${edu.period}</div>
+          <div class="education-location">${edu.location}</div>
+        </div>
+      `)
+      .join('');
   }
 }
 
-// Initialize the resume when the DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-  try {
-    const resume = new Resume(resumeData);
-    resume.render();
-  } catch (error) {
-    console.error('Error initializing resume:', error);
-  }
-}); 
+// Initialize print functionality
+document.querySelector('.print-button button').addEventListener('click', () => {
+  window.print();
+});
+
+// Initialize the page when the DOM is loaded
+document.addEventListener('DOMContentLoaded', initializePage); 
