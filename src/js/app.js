@@ -1,68 +1,75 @@
 // Resume Data
 const resumeData = {
-  name: "Juan David Jaramillo Zúñiga",
-  role: "Senior Software Engineer | Data Engineering & Cloud Architecture",
+  name: "Daniel Ramos",
+  role: "Backend Software Engineer",
   contact: {
     email: {
       label: "Email",
-      value: "djaramilloj1@gmail.com",
-      href: "mailto:djaramilloj1@gmail.com"
+      value: "drramosdev@gmail.com",
+      href: "mailto:drramosdev@gmail.com"
     },
     phone: {
       label: "Phone",
-      value: "(+57)3113768003"
+      value: "+573219952993"
     },
     github: {
       label: "GitHub",
-      value: "https://github.com/djaramilloj",
-      href: "https://github.com/djaramilloj"
+      value: "github.com/meca1",
+      href: "https://github.com/meca1"
     },
     linkedin: {
       label: "LinkedIn",
-      value: "www.linkedin.com/in/djaramilloj",
-      href: "https://www.linkedin.com/in/djaramilloj"
+      value: "linkedin.com/in/danielramosdev",
+      href: "https://www.linkedin.com/in/danielramosdev"
     },
     languages: {
       label: "Languages",
-      value: "Spanish (Native), English (Professional)"
+      value: "Español (Nativo), Inglés (Profesional completo)"
     }
   },
   sections: {
+    summary: {
+      title: "ABOUT ME",
+      content: "I am a self-taught Software Engineer proficient in technologies such as Node.js, Python, Golang, distributed systems, and Docker. " +
+              "With six years of industry experience, I have a strong expertise in Backend and Full-Stack development, specializing in Node.js, AWS, Python, Serverless Architecture, and Microservices. " +
+              "My skills also include working with various databases like PostgreSQL, MySQL, MongoDB, DynamoDB, as well as CI/CD pipelines and testing frameworks like Jest and Cypress. " +
+              "I excel in agile environments and have experience in DevOps practices, cloud solutions, and leading agile teams using tools like Jira and Trello. " +
+              "I am eager to bring my passion for technology and software development to innovative teams and projects, constantly staying updated with the latest trends and technologies."
+    },
     technicalSkills: {
       title: "TECHNICAL EXPERTISE",
       subsections: {
         coreTechnologies: {
           title: "Core Technologies",
           items: [
-            "Python (Expert)",
-            "Java (Advanced)",
-            "SQL (Expert)",
-            "JavaScript/TypeScript",
-            "Scala",
-            "Shell Scripting"
+            "Node.js",
+            "Python",
+            "TypeScript/JavaScript",
+            "Golang",
+            "React",
+            "Flask"
           ]
         },
         frameworksTools: {
           title: "Frameworks & Tools",
           items: [
-            "Apache Spark",
-            "Airflow",
             "Docker",
-            "Kubernetes",
-            "FastAPI",
-            "Spring Boot",
-            "React/Vue.js"
+            "Jest",
+            "Linux",
+            "Firebase",
+            "Terraform",
+            "CI/CD (AWS Pipelines, GitHub Actions)"
           ]
         },
         cloudInfrastructure: {
           title: "Cloud & Infrastructure",
           items: [
-            "AWS (Certified Solutions Architect)",
-            "GCP (Professional Data Engineer)",
-            "Azure",
-            "Terraform",
-            "CI/CD",
-            "Microservices Architecture"
+            "Amazon Web Services",
+            "Serverless Framework",
+            "NoSQL Database Management",
+            "Relational Database Management (RDBMS)",
+            "Microservices Architecture",
+            "Distributed Systems"
           ]
         }
       }
@@ -71,27 +78,50 @@ const resumeData = {
       title: "PROFESSIONAL EXPERIENCE",
       items: [
         {
-          title: "Senior Data Engineer",
-          company: "Tech Company",
-          period: "2021 - Present",
-          location: "Medellín, Colombia",
+          title: "Software Engineer",
+          company: "Cocora",
+          period: "Jan 2024 - Present",
+          location: "Bogotá, Colombia",
           achievements: [
-            "Led the design and implementation of data pipelines processing 500GB+ daily",
-            "Reduced processing costs by 40% through optimization of Spark jobs",
-            "Architected and deployed cloud-native data solutions using AWS and GCP",
-            "Mentored junior engineers and established best practices for the team"
+            "Led backend projects using Node.js, Express.js, and AWS Lambda. Managed databases with Amazon RDS and coordinated asynchronous communications with Amazon SQS. Utilized Python for various backend tasks",
+            "Enhanced user experience by integrating AngularJS, Firebase, and React for dynamic interfaces and real-time functionalities",
+            "Contributed to team success by delivering high-quality results and quickly adapting to new technologies",
+            "Implemented innovative solutions using Python to tackle complex backend challenges, optimizing performance and scalability while reducing development time"
           ]
         },
         {
-          title: "Software Engineer",
-          company: "Another Tech Company",
-          period: "2019 - 2021",
+          title: "Backend Software Engineer",
+          company: "Perficient",
+          period: "Jun 2022 - Dec 2023",
           location: "Bogotá, Colombia",
           achievements: [
-            "Developed and maintained microservices using Spring Boot and Kubernetes",
-            "Implemented real-time data processing pipelines using Apache Kafka",
-            "Improved system reliability by implementing comprehensive monitoring",
-            "Collaborated with cross-functional teams to deliver critical features"
+            "Specialized in working on serverless projects in the fintech industry, leveraging leading software engineering practices",
+            "Utilized a wide range of technologies including Serverless framework, microservices architecture, AWS Cloud, DynamoDB, Node.js, CloudWatch, Lambda, Cognito, PostgreSQL, and Jest to provide high-quality solutions",
+            "Focus on optimizing development processes, ensuring high-quality deliveries within set timelines, using AWS cloud services",
+            "Contributed to a wide variety of projects, developing solutions from mobile enterprise applications to robust software platforms"
+          ]
+        },
+        {
+          title: "Senior Software Developer",
+          company: "Akily",
+          period: "Apr 2019 - Jun 2022",
+          location: "San Francisco, United States",
+          achievements: [
+            "Technical Leadership: Led and oversaw the technical processes of the development team at Akily, ensuring projects were executed with high standards of quality and efficiency",
+            "Continuous Improvement: Stayed updated with industry best practices and emerging technologies, proposing and implementing innovative solutions to drive ongoing success",
+            "Cross-Functional Collaboration: Worked closely with product managers, designers, and quality assurance teams to ensure a cohesive vision and execution throughout the product development lifecycle",
+            "Mentorship and Professional Growth: Provided guidance and support to developers, fostering an environment of continuous learning and development"
+          ]
+        },
+        {
+          title: "Full Stack Developer",
+          company: "Tap4Click",
+          period: "Jun 2018 - Dec 2018",
+          location: "Bogotá, Colombia",
+          achievements: [
+            "Worked on a variety of mobile app and PWA projects, utilizing Angular/Ionic, TypeScript, NativeScript, and Apollo-GraphQL",
+            "Contributed to the Veur app project, an app designed to help vehicle owners manage maintenance alerts and document expiration reminders",
+            "Enhanced multiple web applications using Ruby on Rails as a part of our technology stack"
           ]
         }
       ]
@@ -111,26 +141,14 @@ const resumeData = {
         }
       ]
     },
-    summary: {
-      title: "PROFESSIONAL SUMMARY",
-      content: "Senior Software Engineer with extensive experience in Data Engineering and Cloud Architecture. " +
-              "Proven track record in designing and implementing scalable data solutions, with expertise in cloud technologies " +
-              "and distributed systems. Passionate about solving complex problems and delivering high-impact solutions."
-    },
     education: {
       title: "EDUCATION",
       items: [
         {
-          degree: "Master's in Computer Science",
-          institution: "Universidad Nacional de Colombia",
-          period: "2018 - 2020",
-          location: "Medellín, Colombia"
-        },
-        {
-          degree: "Bachelor's in Systems Engineering",
-          institution: "Universidad de Antioquia",
-          period: "2014 - 2018",
-          location: "Medellín, Colombia"
+          degree: "Ingeniería de Sistemas",
+          institution: "Fundación de Educación Superior San José",
+          period: "",
+          location: "Colombia, Bogotá"
         }
       ]
     }
