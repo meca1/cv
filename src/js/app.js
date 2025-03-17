@@ -96,10 +96,11 @@ const resumeData = {
           period: "Jun 2022 - Dec 2023",
           location: "Bogotá, Colombia",
           achievements: [
-            "Desarrollé soluciones serverless para el sector fintech procesando más de 1M transacciones mensuales con una latencia promedio de 200ms",
-            "Implementé una arquitectura de microservicios utilizando AWS que redujo los costos de infraestructura en un 30%",
-            "Lideré la migración de una base de datos monolítica a una arquitectura distribuida, mejorando la escalabilidad y mantenibilidad",
-            "Optimicé pipelines de CI/CD reduciendo el tiempo de despliegue en un 50%"
+            "Lideré el desarrollo del Directorio Universal, una solución fintech que consolida información de 2M+ usuarios utilizando arquitectura hexagonal y AWS OpenSearch",
+            "Implementé un sistema de migración de datos utilizando DynamoDB y DynamoDB Streams, asegurando la integridad y consistencia de la información",
+            "Diseñé e implementé APIs RESTful para integración con servicios financieros de terceros, utilizando Serverless Framework y AWS Lambda",
+            "Realicé investigación y pruebas de concepto para la implementación de LaunchDarkly (feature flags) y SonarQube (análisis de calidad de código)",
+            "Desarrollé y mantuve microservicios serverless procesando más de 1M transacciones mensuales con una latencia promedio de 200ms"
           ]
         },
         {
