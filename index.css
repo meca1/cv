@@ -17,14 +17,16 @@ html {
 body {
   background-color: #fff;
   color: #333;
-  font-family: Arial, sans-serif;
+  font-family: Raleway, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
-.container-fluid {
-  padding: 0 10% !important;
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px 40px;
 }
 
 ul {
@@ -45,206 +47,119 @@ p {
   margin-bottom: 1rem;
 }
 
-.headLine {
-  width: 2px;
-  position: absolute;
-  top: 0;
-  left: 1rem;
-  height: 120px;
-  background-color: rgb(41, 41, 41);
-}
-
-.header {
-  padding-top: 8rem;
-  padding-bottom: 5rem;
-  direction: ltr;
-  margin-bottom: 2rem;
-  position: relative;
+/* Header styles */
+header {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.firstName {
-  font-weight: 300;
+.name {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  word-break: break-word;
-  color: rgb(62, 62, 62);
-  font-size: 3.5rem;
-  line-height: 1.68;
-  letter-spacing: 0.2rem;
-  margin-bottom: 0.5rem;
-  direction: ltr;
 }
 
-.lastName {
-  font-weight: 700;
-  font-size: 4.5rem;
-  text-transform: uppercase;
-  word-break: break-word;
-  padding-right: 2rem;
-  color: rgb(62, 62, 62);
-  line-height: 1.09;
-  letter-spacing: 0.2rem;
-  direction: ltr;
+.contact-info, .social-links {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  color: rgb(102, 103, 102);
 }
 
-.jobTitle {
-  padding-right: 0;
-  margin-top: 2rem;
-  color: rgb(41, 41, 41);
-  
-  span {
-    padding-left: 1rem;
-    letter-spacing: 0.05rem;
-    text-transform: uppercase;
-    word-break: break-word;
-    direction: ltr;
-    color: rgb(76, 74, 74);
-    font-size: 1.5rem;
-  }
-}
-
-.photo {
-  width: 200px;
-  height: 200px;
-  max-height: 270px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid #333;
-}
-
-.middleLine {
-  width: 2px;
-  position: absolute;
-  bottom: 2rem;
-  left: 1rem;
-  height: 60px;
-  background-color: rgb(41, 41, 41);
-}
-
-.icon {
-  width: 40px;
-  height: 40px;
-  font-size: 1.2rem;
-  color: white;
-  background-color: rgb(62, 62, 62);
-  border-radius: 50%;
-  padding: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-a p {
-  word-break: break-word;
+.contact-info a,
+.social-links a {
   color: rgb(102, 103, 102);
   text-decoration: none;
 }
 
-a:hover p {
-  color: rgb(41, 41, 41);
+/* Section styles */
+section {
+  margin-bottom: 30px;
 }
 
-.list-item {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-right: 1rem;
-  &:not(:last-child) {
-    border-bottom: 2px solid rgb(35, 31, 32);
-  }
-}
-
-.title {
-  width: 100%;
-  font-weight: 700;
-  font-size: 2rem;
+h2 {
+  font-size: 20px;
+  font-weight: bold;
   text-transform: uppercase;
-  line-height: 2.5rem;
+  margin-bottom: 15px;
   border-bottom: 1px solid rgb(35, 31, 32);
-  padding-top: 0;
-  padding-bottom: 2rem;
+  padding-bottom: 10px;
   color: rgb(34, 33, 33);
   letter-spacing: 0.05rem;
-  margin-bottom: 1rem;
 }
 
-.personal-details {
-  .title {
-    padding-top: 2rem;
-  }
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: rgb(34, 33, 33);
 }
 
-.bullet {
-  position: relative;
-  i {
-    font-size: 1.3rem;
-  }
-  &:before {
-    content: "";
-    position: absolute;
-    left: 1rem;
-    width: 2px;
-    height: 70%;
-    background-color: #292929;
-    margin-top: 2rem;
-  }
-}
-
-.record {
-  padding-top: 1rem;
-  p {
-    width: 100%;
-    font-size: 1.2rem;
-    line-height: 1.33;
-    color: rgb(102, 103, 102);
-    word-break: break-word;
-    display: block;
-    margin-bottom: 0.5rem;
-  }
+/* List styles */
+ul {
+  margin: 8px 0;
+  padding-left: 20px;
+  list-style-type: disc;
 }
 
 li {
-  font-family: Raleway;
-  line-height: 1.33;
-  font-size: 1.2rem;
-  color: rgb(123, 123, 123);
-  margin-bottom: 0.5rem;
-}
-
-span {
+  font-size: 16px;
+  margin-bottom: 8px;
+  line-height: 1.4;
   color: rgb(102, 103, 102);
-  font-size: 1rem;
-  line-height: 1.2;
-  letter-spacing: 0.05rem;
 }
 
+/* Skills Section */
+.row {
+  display: flex;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+}
+
+.col-md-4 {
+  padding: 0 15px;
+  flex: 0 0 33.333333%;
+}
+
+/* Job styles */
+.job {
+  margin-bottom: 25px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.job span {
+  font-size: 16px;
+  color: rgb(102, 103, 102);
+}
+
+/* Print button */
 .btn-group-fab {
   position: fixed;
-  width: 50px;
-  height: auto;
-  right: 20px;
   bottom: 20px;
-  z-index: 1000;
-}
-
-.btn-group-fab div {
-  position: relative;
-  width: 100%;
-  height: auto;
+  right: 20px;
+  z-index: 999;
 }
 
 .btn-group-fab .btn {
-  position: absolute;
-  bottom: 0;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 50px;
   height: 50px;
-  margin: 4px auto;
+  border-radius: 50%;
   background-color: rgb(62, 62, 62);
   border: none;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
@@ -258,163 +173,74 @@ span {
   color: white;
 }
 
+/* Print styles */
 @media print {
   @page {
     size: A4;
-    margin: 0mm !important;
+    margin: 15mm;
   }
-  
-  html {
-    font-size: 12px;
-  }
-  
-  .header {
-    padding-top: 6rem;
-    padding-bottom: 4rem;
-  }
-  
-  ul li {
-    margin-left: 1rem;
-  }
-  
-  .btn-group-fab {
-    display: none;
-  }
-}
 
-/* Resto de tu CSS */
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Header styles */
-header {
-  margin-bottom: 30px;
-}
-
-.name {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.contact-info {
-  margin-bottom: 10px;
-}
-
-.contact-info a,
-.social-links a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-.contact-info a:hover,
-.social-links a:hover {
-  text-decoration: underline;
-}
-
-/* Section styles */
-section {
-  margin-bottom: 25px;
-}
-
-h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-
-h3 {
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-/* List styles */
-li {
-  margin-bottom: 5px;
-  font-size: 14px;
-}
-
-/* Job styles */
-.job {
-  margin-bottom: 20px;
-}
-
-.job span {
-  font-size: 14px;
-  color: #666;
-}
-
-/* Project styles */
-.project {
-  margin-bottom: 20px;
-}
-
-.project p {
-  font-size: 14px;
-  margin: 5px 0;
-}
-
-/* Education styles */
-.education-item {
-  margin-bottom: 15px;
-}
-
-.education-item p {
-  font-size: 14px;
-  margin: 5px 0;
-}
-
-/* Print styles */
-@media print {
   body {
-    font-size: 12px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    line-height: inherit;
+    background: none;
   }
 
   .container {
-    max-width: 100%;
-    padding: 20px;
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
-  .btn-group-fab {
-    display: none;
+  header {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+    page-break-after: avoid;
+  }
+
+  h3 {
+    font-size: 16px;
+    page-break-after: avoid;
+  }
+
+  p, li {
+    font-size: inherit;
+    line-height: 1.4;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+
+  .row {
+    page-break-inside: avoid;
+  }
+
+  .job {
+    page-break-inside: avoid;
   }
 
   a {
     text-decoration: none;
-    color: #333;
+    color: inherit;
   }
-}
 
-/* Print button */
-.btn-group-fab {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-}
+  .btn-group-fab {
+    display: none;
+  }
 
-.btn-group-fab .btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #0066cc;
-  border: none;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+  ul {
+    padding-left: 20px;
+  }
 
-.btn-group-fab .btn:hover {
-  transform: scale(1.1);
-  background-color: #0052a3;
+  .col-md-4 {
+    width: 33.333333%;
+  }
 }
