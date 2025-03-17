@@ -21,42 +21,169 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 15px;
 }
 
 .container {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px;
   background: white;
   position: relative;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    padding: 1rem;
-  }
-  
+/* Responsive container */
+@media screen and (max-width: 1024px) {
   .container {
-    padding: 1.5rem;
+    max-width: 800px;
   }
 }
 
-/* Header */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  .container {
+    padding: 12px;
+  }
+
+  .skills-container {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: unset;
+    grid: none;
+    gap: 0;
+  }
+
+  .skill-section {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .skill-section:last-child {
+    margin-bottom: 0;
+  }
+
+  .skill-section h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .skill-section ul {
+    padding-left: 20px;
+  }
+
+  .skill-section li {
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+
+  .print-button {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 8px;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .role {
+    font-size: 14px;
+  }
+
+  .skills-container {
+    margin-top: 5px;
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: unset;
+    grid: none;
+    gap: 0;
+  }
+
+  .skill-section {
+    margin-bottom: 20px;
+  }
+
+  .skill-section:last-child {
+    margin-bottom: 0;
+  }
+  
+  .skill-section h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .skill-section ul {
+    padding-left: 16px;
+  }
+
+  .skill-section li {
+    margin-bottom: 4px;
+    font-size: 13px;
+  }
+
+  section h2 {
+    font-size: 16px;
+  }
+
+  .job-header h3 {
+    font-size: 14px;
+  }
+
+  .job-period {
+    font-size: 12px;
+  }
+
+  .contact-info {
+    font-size: 12px;
+  }
+
+  .contact-info .label {
+    min-width: 70px;
+  }
+
+  .print-button {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .print-button button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Header styles */
 header {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .name {
   font-size: 24px;
   margin: 0 0 5px;
+  word-wrap: break-word;
 }
 
 .role {
   font-size: 16px;
   margin: 0 0 10px;
   color: #666;
+  word-wrap: break-word;
 }
 
 .contact-info {
@@ -69,7 +196,8 @@ header {
 .contact-info div {
   display: flex;
   gap: 10px;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .contact-info .label {
@@ -81,22 +209,24 @@ header {
 .contact-info a {
   color: #2c5282;
   text-decoration: none;
+  word-break: break-all;
 }
 
 .contact-info a:hover {
   text-decoration: underline;
 }
 
-/* Sections */
+/* Section styles */
 section {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 section h2 {
   font-size: 18px;
-  margin: 0 0 10px;
+  margin: 0 0 15px;
   padding-bottom: 5px;
   border-bottom: 2px solid #2c5282;
+  word-wrap: break-word;
 }
 
 h3 {
@@ -106,17 +236,18 @@ h3 {
   margin: 0 0 1rem 0;
 }
 
-/* Technical Skills */
+/* Skills section */
 .skills-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 20px;
 }
 
 .skill-section h3 {
   font-size: 16px;
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   color: #444;
+  word-wrap: break-word;
 }
 
 .skill-section ul {
@@ -125,30 +256,29 @@ h3 {
 }
 
 .skill-section li {
-  margin-bottom: 4px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
 }
 
-/* Experience */
+/* Experience section */
 .job {
-  margin-bottom: 12px;
-}
-
-.job:last-child {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .job-header {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .job-header h3 {
   font-size: 16px;
-  margin: 0 0 4px;
+  margin: 0 0 5px;
+  word-wrap: break-word;
 }
 
 .job-period {
   font-size: 14px;
   color: #666;
+  word-wrap: break-word;
 }
 
 .job ul {
@@ -157,7 +287,8 @@ h3 {
 }
 
 .job li {
-  margin-bottom: 4px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
 }
 
 /* Projects */
@@ -218,11 +349,11 @@ h3 {
   color: #666;
 }
 
-/* Print Button */
+/* Print button */
 .print-button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  position: fixed;
+  bottom: 20px;
+  z-index: 100;
 }
 
 .print-button button {
@@ -236,6 +367,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .print-button button:hover {

@@ -1,6 +1,6 @@
 // Resume Data
 const resumeData = {
-  name: "Daniel Ramos",
+  name: "Daniel Ricardo Ramos Ruiz",
   role: "Backend Software Engineer",
   contact: {
     email: {
