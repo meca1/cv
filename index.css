@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
-  font-family: Raleway;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
-  text-size-adjust: 100%;
-  outline: none !important;
 }
 
 html {
@@ -15,232 +12,248 @@ html {
 }
 
 body {
-  background-color: #fff;
-  color: #333;
-  font-family: Raleway, sans-serif;
   line-height: 1.6;
+  color: #2D3748;
   margin: 0;
   padding: 0;
+  background: #fff;
 }
 
 .container {
-  max-width: 850px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 40px;
 }
 
-ul {
-  list-style: circle;
-  padding-left: 1.5rem;
-  margin: 0;
-}
-
-li::marker {
-  color: black;
-}
-
-p {
-  font-size: 1.2rem;
-  letter-spacing: 0.05rem;
-  color: rgb(102, 103, 102);
-  word-break: break-word;
-  margin-bottom: 1rem;
-}
-
-/* Header styles */
+/* Header */
 header {
-  text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .name {
   font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: #1A202C;
+  letter-spacing: -0.5px;
 }
 
-.contact-info, .social-links {
-  font-size: 16px;
+.role {
+  font-size: 18px;
+  color: #4A5568;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.contact-details {
+  font-size: 14px;
   line-height: 1.5;
-  margin-bottom: 8px;
-  color: rgb(102, 103, 102);
+  color: #4A5568;
 }
 
-.contact-info a,
-.social-links a {
-  color: rgb(102, 103, 102);
+.contact-info a {
+  color: #3182CE;
   text-decoration: none;
+  transition: color 0.2s;
 }
 
-/* Section styles */
+.contact-info a:hover {
+  color: #2C5282;
+}
+
+/* Sections */
 section {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 h2 {
   font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  border-bottom: 1px solid rgb(35, 31, 32);
-  padding-bottom: 10px;
-  color: rgb(34, 33, 33);
-  letter-spacing: 0.05rem;
+  font-weight: 600;
+  color: #1A202C;
+  margin: 0 0 20px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #E2E8F0;
+  letter-spacing: 0.5px;
 }
 
 h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 8px;
-  color: rgb(34, 33, 33);
+  font-size: 16px;
+  font-weight: 600;
+  color: #2D3748;
+  margin: 0 0 12px 0;
 }
 
-/* List styles */
-ul {
-  margin: 8px 0;
+/* Technical Skills */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.skill-section {
+  margin-bottom: 0;
+}
+
+.skill-section ul {
+  margin: 0;
   padding-left: 20px;
-  list-style-type: disc;
+}
+
+.skill-section li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #4A5568;
+}
+
+/* Experience */
+.job {
+  margin-bottom: 24px;
+}
+
+.job h3 {
+  color: #1A202C;
+  margin-bottom: 6px;
+}
+
+.job-header {
+  margin-bottom: 12px;
+}
+
+.job-period {
+  font-size: 14px;
+  color: #718096;
+  font-weight: 500;
+}
+
+/* Projects */
+.project {
+  margin-bottom: 24px;
+}
+
+.project h3 {
+  color: #1A202C;
+  margin-bottom: 6px;
+}
+
+.project-tech {
+  font-size: 14px;
+  color: #718096;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+/* Lists */
+ul {
+  margin: 0;
+  padding-left: 20px;
 }
 
 li {
-  font-size: 16px;
   margin-bottom: 8px;
-  line-height: 1.4;
-  color: rgb(102, 103, 102);
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4A5568;
 }
 
-/* Skills Section */
-.row {
-  display: flex;
-  margin: 0 -15px;
-  flex-wrap: wrap;
-}
-
-.col-md-4 {
-  padding: 0 15px;
-  flex: 0 0 33.333333%;
-}
-
-/* Job styles */
-.job {
-  margin-bottom: 25px;
-}
-
-.d-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 10px;
-}
-
-.job span {
-  font-size: 16px;
-  color: rgb(102, 103, 102);
-}
-
-/* Print button */
-.btn-group-fab {
+/* Print Button */
+.print-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 24px;
+  right: 24px;
   z-index: 999;
 }
 
-.btn-group-fab .btn {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: rgb(62, 62, 62);
+.print-button button {
+  padding: 12px 24px;
+  background: #3182CE;
+  color: white;
   border: none;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  border-radius: 6px;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.btn-group-fab .btn:hover {
-  background-color: rgb(41, 41, 41);
-  transform: scale(1.1);
+.print-button button:hover {
+  background: #2C5282;
 }
 
-.btn-group-fab .btn i {
-  font-size: 1.5rem;
-  color: white;
-}
-
-/* Print styles */
+/* Print Styles */
 @media print {
   @page {
+    margin: 1cm;
     size: A4;
-    margin: 15mm;
   }
 
   body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: inherit;
-    line-height: inherit;
-    background: none;
+    font-size: 11pt;
+    line-height: 1.4;
+    color: #000;
   }
 
   .container {
     max-width: none;
-    width: 100%;
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
 
   header {
-    margin-bottom: 20px;
+    margin-bottom: 20pt;
+  }
+
+  .name {
+    font-size: 24pt;
+  }
+
+  .role {
+    font-size: 14pt;
   }
 
   h2 {
-    font-size: 18px;
-    page-break-after: avoid;
+    font-size: 16pt;
+    margin-bottom: 12pt;
+    color: #000;
+    border-bottom-color: #000;
   }
 
   h3 {
-    font-size: 16px;
-    page-break-after: avoid;
+    font-size: 12pt;
+    color: #000;
   }
 
   p, li {
-    font-size: inherit;
+    font-size: 10pt;
     line-height: 1.4;
+    color: #000;
   }
 
   section {
+    margin-bottom: 16pt;
     page-break-inside: avoid;
   }
 
-  .row {
+  .job, .project, .education-item {
     page-break-inside: avoid;
+    margin-bottom: 12pt;
   }
 
-  .job {
-    page-break-inside: avoid;
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16pt;
+  }
+
+  .print-button {
+    display: none;
   }
 
   a {
     text-decoration: none;
-    color: inherit;
+    color: #000;
   }
 
-  .btn-group-fab {
-    display: none;
-  }
-
-  ul {
-    padding-left: 20px;
-  }
-
-  .col-md-4 {
-    width: 33.333333%;
+  .contact-info a {
+    color: #000;
   }
 }
