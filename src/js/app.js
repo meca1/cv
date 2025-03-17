@@ -24,16 +24,16 @@ const resumeData = {
     },
     languages: {
       label: "Languages",
-      value: "Español (Nativo), Inglés (Profesional completo)"
+      value: "Spanish (Native), English (Professional working proficiency)"
     }
   },
   sections: {
     summary: {
       title: "ABOUT ME",
-      content: "Ingeniero de Software con más de 6 años de experiencia especializado en desarrollo Backend y arquitecturas distribuidas. " +
-               "Experto en Node.js, Python y tecnologías cloud, con sólida experiencia en el diseño e implementación de microservicios y arquitecturas serverless. " +
-               "Destaco por mi capacidad para liderar equipos técnicos y optimizar procesos de desarrollo, habiendo contribuido al éxito de múltiples proyectos en fintech y desarrollo empresarial. " +
-               "Apasionado por las nuevas tecnologías y la mejora continua, con un enfoque en soluciones escalables y de alto rendimiento."
+      content: "Software Engineer with over 6 years of experience specializing in Backend development and distributed architectures. " +
+               "Expert in Node.js, Python, and cloud technologies, with solid experience in designing and implementing microservices and serverless architectures. " +
+               "I excel in leading technical teams and optimizing development processes, having contributed to the success of multiple projects in fintech and enterprise development. " +
+               "Passionate about new technologies and continuous improvement, with a focus on scalable and high-performance solutions."
     },
     technicalSkills: {
       title: "TECHNICAL EXPERTISE",
@@ -83,11 +83,11 @@ const resumeData = {
           period: "Jan 2024 - Present",
           location: "Bogotá, Colombia",
           achievements: [
-            "Lideré la migración de una arquitectura monolítica a microservicios utilizando Serverless Framework, reduciendo costos operativos en un 40% y mejorando la escalabilidad",
-            "Diseñé e implementé una arquitectura distribuida utilizando AWS (Lambda, SQS, DynamoDB, RDS, API Gateway) y Docker, procesando más de 100,000 transacciones diarias",
-            "Desarrollé y mantuve APIs RESTful y GraphQL en Node.js/TypeScript, implementando patrones de diseño y mejores prácticas de arquitectura",
-            "Implementé infraestructura como código usando CloudFormation y Serverless Framework, automatizando el despliegue y reduciendo el tiempo de configuración en un 60%",
-            "Integré sistemas de monitoreo con CloudWatch y establecí alertas proactivas, reduciendo el tiempo de detección de incidentes en un 70%"
+            "Led the migration from a monolithic architecture to microservices using Serverless Framework, reducing operational costs by 40% and improving scalability",
+            "Designed and implemented a distributed architecture using AWS (Lambda, SQS, DynamoDB, RDS, API Gateway) and Docker, processing over 100,000 daily transactions",
+            "Developed and maintained RESTful and GraphQL APIs in Node.js/TypeScript, implementing design patterns and architectural best practices",
+            "Implemented infrastructure as code using CloudFormation and Serverless Framework, automating deployment and reducing configuration time by 60%",
+            "Integrated monitoring systems with CloudWatch and established proactive alerts, reducing incident detection time by 70%"
           ]
         },
         {
@@ -96,11 +96,11 @@ const resumeData = {
           period: "Jun 2022 - Dec 2023",
           location: "Bogotá, Colombia",
           achievements: [
-            "Lideré el desarrollo del Directorio Universal, una solución fintech que consolida información de 2M+ usuarios utilizando arquitectura hexagonal y AWS OpenSearch",
-            "Implementé un sistema de migración de datos utilizando DynamoDB y DynamoDB Streams, asegurando la integridad y consistencia de la información",
-            "Diseñé e implementé APIs RESTful para integración con servicios financieros de terceros, utilizando Serverless Framework y AWS Lambda",
-            "Realicé investigación y pruebas de concepto para la implementación de LaunchDarkly (feature flags) y SonarQube (análisis de calidad de código)",
-            "Desarrollé y mantuve microservicios serverless procesando más de 1M transacciones mensuales con una latencia promedio de 200ms"
+            "Led the development of the Universal Directory, a fintech solution consolidating information for 2M+ users using hexagonal architecture and AWS OpenSearch",
+            "Implemented a data migration system using DynamoDB and DynamoDB Streams, ensuring data integrity and consistency",
+            "Designed and implemented RESTful APIs for third-party financial services integration, using Serverless Framework and AWS Lambda",
+            "Conducted research and proof of concept for implementing LaunchDarkly (feature flags) and SonarQube (code quality analysis)",
+            "Developed and maintained serverless microservices processing over 1M monthly transactions with an average latency of 200ms"
           ]
         },
         {
@@ -109,12 +109,12 @@ const resumeData = {
           period: "Apr 2019 - Jun 2022",
           location: "San Francisco, United States",
           achievements: [
-            "Lideré la migración de la aplicación móvil de Ionic 3 a Ionic 4, mejorando el rendimiento y la mantenibilidad del código",
-            "Diseñé e implementé un pipeline de CI/CD utilizando Bitrise para automatizar el despliegue en App Store y Google Play Store",
-            "Desarrollé un sistema de notificaciones push utilizando Firebase Cloud Messaging, aumentando la retención de usuarios en un 30%",
-            "Implementé APIs GraphQL y RESTful utilizando Node.js/TypeScript y Python/Flask, mejorando la eficiencia de las consultas",
-            "Integré servicios de AWS (Lambda, S3, CloudWatch) y Solr para optimizar la búsqueda y el procesamiento de datos",
-            "Mentoreé a 3 desarrolladores junior, ayudándoles a alcanzar el nivel senior en 12 meses"
+            "Led the migration of the mobile app from Ionic 3 to Ionic 4, improving code performance and maintainability",
+            "Designed and implemented a CI/CD pipeline using Bitrise to automate deployment to App Store and Google Play Store",
+            "Developed a push notification system using Firebase Cloud Messaging, increasing user retention by 30%",
+            "Implemented GraphQL and RESTful APIs using Node.js/TypeScript and Python/Flask, improving query efficiency",
+            "Integrated AWS services (Lambda, S3, CloudWatch) and Solr to optimize search and data processing",
+            "Mentored 3 junior developers, helping them reach senior level within 12 months"
           ]
         },
         {
@@ -123,10 +123,10 @@ const resumeData = {
           period: "Jun 2018 - Dec 2018",
           location: "Bogotá, Colombia",
           achievements: [
-            "Colaboré en el desarrollo de una PWA utilizando Angular/Ionic y TypeScript, alcanzando más de 10,000 usuarios activos",
-            "Implementé funcionalidades de notificaciones push utilizando Firebase, mejorando la retención de usuarios",
-            "Contribuí a la optimización de aplicaciones Ruby on Rails, implementando técnicas de caching y mejorando el rendimiento",
-            "Participé en el desarrollo de nuevas características y corrección de bugs en aplicaciones web y móviles"
+            "Contributed to the development of a PWA using Angular/Ionic and TypeScript, reaching over 10,000 active users",
+            "Implemented push notification features using Firebase, improving user retention",
+            "Contributed to Ruby on Rails application optimization, implementing caching techniques and improving performance",
+            "Participated in developing new features and bug fixing for web and mobile applications"
           ]
         }
       ]
@@ -135,35 +135,27 @@ const resumeData = {
       title: "NOTABLE PROJECTS",
       items: [
         {
-          name: "Data Processing Platform",
-          technologies: "Python, Apache Spark, AWS, Airflow",
-          description: "Diseñé e implementé una plataforma de procesamiento de datos distribuida que maneja millones de registros diarios",
+          name: "Ecija - Automated Tax Document Processing Platform",
+          technologies: "Python, Node.js/TypeScript, AWS (Lambda, SQS, S3), OpenAI, Tesseract OCR, Google Drive API, Serverless Framework, AWS CDK",
+          description: "Led the development of an automated platform for processing tax documents from DIAN (Colombian Tax Authority), implementing AI-powered data extraction and microservices architecture",
           highlights: [
-            "Implementé una arquitectura fault-tolerant que redujo el tiempo de recuperación de fallos en un 70%",
-            "Optimicé el procesamiento de datos reduciendo el tiempo de ejecución en un 60%",
-            "Automaticé el despliegue usando Terraform, reduciendo el tiempo de configuración en un 80%"
+            "Implemented AI-powered document processing using OpenAI and Tesseract OCR, achieving 95% accuracy in data extraction from tax documents",
+            "Designed and implemented a microservices architecture using Python and Node.js/TypeScript, with 90% test coverage and automated CI/CD pipelines",
+            "Developed a robust file processing system handling multiple document formats, integrated with Google Drive for document management",
+            "Built a scalable infrastructure using AWS CDK and Serverless Framework, implementing SQS for event-driven processing and S3 for document storage",
+            "Created an automated workflow system that reduced manual processing time by 85% and improved data accuracy by 40%"
           ]
         },
-        {
-          name: "Real-time Analytics Dashboard",
-          technologies: "Node.js, React, WebSocket, MongoDB",
-          description: "Desarrollé un dashboard en tiempo real para visualización de métricas empresariales",
-          highlights: [
-            "Implementé WebSockets para actualizaciones en tiempo real con latencia < 100ms",
-            "Diseñé una arquitectura escalable que maneja más de 10,000 conexiones simultáneas",
-            "Integré múltiples fuentes de datos con un tiempo de respuesta < 200ms"
-          ]
-        }
       ]
     },
     education: {
       title: "EDUCATION",
       items: [
         {
-          degree: "Ingeniería de Sistemas",
+          degree: "Systems Engineering",
           institution: "Fundación de Educación Superior San José",
           period: "",
-          location: "Colombia, Bogotá"
+          location: "Bogotá, Colombia"
         }
       ]
     }
