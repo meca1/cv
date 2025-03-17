@@ -377,47 +377,52 @@ h3 {
 /* Print Styles */
 @media print {
   @page {
-    margin: 0.5cm;
+    margin: 0.8cm;
     size: A4;
   }
 
   * {
     margin: 0;
     padding: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   html {
-    font-size: 10pt;
+    font-size: 9pt;
   }
 
   body {
     padding: 0;
     margin: 0;
-    line-height: 1.1;
+    line-height: 1.15;
     color: #000;
     min-height: 0;
+    background: none;
   }
 
   .container {
     max-width: none;
     width: 100%;
     margin: 0;
-    padding: 8px;
+    padding: 0;
     background: none;
   }
 
   header {
-    margin-bottom: 8px;
+    margin-bottom: 8pt;
   }
 
   .name {
     font-size: 14pt;
     margin-bottom: 2pt;
+    color: #2c5282;
   }
 
   .role {
     font-size: 10pt;
     margin-bottom: 4pt;
+    color: #444;
   }
 
   .contact-info {
@@ -430,10 +435,6 @@ h3 {
     gap: 3pt;
   }
 
-  .contact-info .label {
-    min-width: 60px;
-  }
-
   section {
     margin-bottom: 8pt;
     page-break-inside: avoid;
@@ -443,39 +444,54 @@ h3 {
     font-size: 12pt;
     margin-bottom: 6pt;
     padding-bottom: 2pt;
-    border-bottom-width: 1px;
+    border-bottom: 1pt solid #2c5282;
+    color: #2c5282;
   }
 
   h3 {
-    font-size: 10pt;
+    font-size: 9pt;
     margin-bottom: 2pt;
+    color: #2c5282;
   }
 
   p, li {
     font-size: 9pt;
-    line-height: 1.1;
-    margin-bottom: 2pt;
-  }
-
-  .skills-container {
-    gap: 6pt;
-    margin-bottom: 8pt;
-  }
-
-  .skill-section h3 {
-    margin-bottom: 3pt;
-  }
-
-  .skill-section ul {
-    padding-left: 12px;
-  }
-
-  .skill-section li {
+    line-height: 1.2;
     margin-bottom: 1pt;
   }
 
+  /* Skills section specific */
+  .skills-container {
+    gap: 6pt;
+    margin-bottom: 8pt;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skill-section {
+    break-inside: avoid;
+    margin-bottom: 0;
+  }
+
+  .skill-section h3 {
+    margin-bottom: 2pt;
+    color: #444;
+    font-weight: 600;
+  }
+
+  .skill-section ul {
+    padding-left: 10pt;
+  }
+
+  .skill-section li {
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+
+  /* Experience section */
   .job {
     margin-bottom: 6pt;
+    page-break-inside: avoid;
   }
 
   .job:last-child {
@@ -487,32 +503,44 @@ h3 {
   }
 
   .job ul {
-    padding-left: 12px;
+    padding-left: 10pt;
+  }
+
+  .job li {
+    margin-bottom: 1pt;
   }
 
   .job-period {
     font-size: 8pt;
+    color: #444;
   }
 
+  /* Projects section */
   .project {
     margin-bottom: 6pt;
+    page-break-inside: avoid;
   }
 
   .project-tech {
     font-size: 8pt;
-    margin-bottom: 2pt;
+    color: #444;
+    margin-bottom: 1pt;
+    font-style: italic;
   }
 
   .project ul {
-    padding-left: 12px;
+    padding-left: 10pt;
   }
 
+  /* Education section */
   .education-item {
     margin-bottom: 4pt;
+    page-break-inside: avoid;
   }
 
   .education-period, .education-location {
     font-size: 8pt;
+    color: #444;
   }
 
   .print-button {
@@ -521,6 +549,10 @@ h3 {
 
   a {
     text-decoration: none;
-    color: #000;
+    color: #2c5282;
+  }
+
+  ul {
+    list-style-type: square;
   }
 }
