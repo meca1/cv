@@ -67,12 +67,15 @@ const resumeData = {
         cloudInfrastructure: {
           title: "Cloud & Infrastructure",
           items: [
-            "AWS Services: Lambda, SQS, RDS, DynamoDB, Cognito, CloudWatch, S3, EC2, ECS, API Gateway, Route53, CloudFront",
-            "Serverless Architecture & Framework",
-            "Microservices Design Patterns",
-            "CI/CD Pipelines & DevOps",
-            "Database Design & Optimization",
-            "System Architecture & Scalability"
+            "AWS Lambda & Serverless",
+            "AWS RDS & DynamoDB",
+            "AWS Secrets Manager",
+            "AWS SQS & API Gateway",
+            "AWS S3, CloudFront, Route53",
+            "AWS Cognito & IAM",
+            "AWS CloudWatch & CloudTrail",
+            "Microservices Architecture",
+            "CI/CD & DevOps Practices"
           ]
         }
       }
@@ -139,12 +142,12 @@ const resumeData = {
       items: [
         {
           name: "Ecija - Automated Tax Document Processing Platform",
-          technologies: "Python, Node.js/TypeScript, AWS (Lambda, SQS, S3), OpenAI, Tesseract OCR, Google Drive API, Serverless Framework, AWS CDK",
-          description: "Led the development of an automated platform for processing tax documents from DIAN (Colombian Tax Authority), implementing AI-powered data extraction and microservices architecture",
+          technologies: "Python, Node.js/TypeScript, AWS (Lambda, SQS, RDS, DynamoDB, S3, Secrets Manager), OpenAI, Google Drive API, Serverless Framework, AWS CDK",
+          description: "Led the development of an automated platform for processing tax documents from DIAN (Colombian Tax Authority), implementing AI-powered data extraction and microservices architecture with secure data handling",
           highlights: [
             "Implemented AI-powered document processing using OpenAI and Tesseract OCR, achieving 95% accuracy in data extraction from tax documents",
             "Designed and implemented a microservices architecture using Python and Node.js/TypeScript, with 90% test coverage and automated CI/CD pipelines",
-            "Developed a robust file processing system handling multiple document formats, integrated with Google Drive for document management",
+            "Developed a robust file processing system with secure data storage using RDS, DynamoDB, and Secrets Manager for sensitive information",
             "Built a scalable infrastructure using AWS CDK and Serverless Framework, implementing SQS for event-driven processing and S3 for document storage",
             "Created an automated workflow system that reduced manual processing time by 85% and improved data accuracy by 40%"
           ]
