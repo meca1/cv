@@ -52,7 +52,10 @@ const resumeData = {
           title: "Frameworks & Tools",
           items: [
             "Docker & Kubernetes",
-            "Jest & Testing Frameworks",
+            "Jest & Cypress",
+            "Postman & Swagger/OpenAPI",
+            "DataDog & Sentry",
+            "AWS CloudWatch & JMeter",
             "Linux & Shell Scripting",
             "Firebase & Real-time DB",
             "Terraform & IaC",
