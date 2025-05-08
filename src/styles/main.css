@@ -262,33 +262,77 @@ h3 {
 
 /* Experience section */
 .job {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
 }
 
 .job-header {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .job-header h3 {
-  font-size: 16px;
-  margin: 0 0 5px;
-  word-wrap: break-word;
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
 }
 
 .job-period {
-  font-size: 14px;
   color: #666;
-  word-wrap: break-word;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
 }
 
-.job ul {
+.job-details {
+  margin-top: 1rem;
+}
+
+.job-description {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.job-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.job-technologies,
+.job-team {
+  flex: 1;
+  min-width: 200px;
+}
+
+.job-technologies strong,
+.job-team strong {
+  color: #2c3e50;
+  margin-right: 0.5rem;
+}
+
+.job-achievements {
+  margin-top: 1rem;
+}
+
+.job-achievements h4 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.job-achievements ul {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 1.5rem;
 }
 
-.job li {
-  margin-bottom: 5px;
-  word-wrap: break-word;
+.job-achievements li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
 }
 
 /* Projects */
@@ -353,7 +397,10 @@ h3 {
 .print-button {
   position: fixed;
   bottom: 20px;
-  z-index: 100; 
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  gap: 10px;
 }
 
 .print-button button {
@@ -368,10 +415,19 @@ h3 {
   align-items: center;
   gap: 6px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.2s ease;
 }
 
 .print-button button:hover {
   background-color: #1a365d;
+}
+
+#language-toggle {
+  background-color: #38a169;
+}
+
+#language-toggle:hover {
+  background-color: #2f855a;
 }
 
 /* Print Styles */
@@ -436,8 +492,9 @@ h3 {
   }
 
   section {
-    margin-bottom: 8pt;
+    margin-bottom: 4pt !important;
     page-break-inside: avoid;
+    padding: 0 !important;
   }
 
   section h2 {
@@ -490,8 +547,10 @@ h3 {
 
   /* Experience section */
   .job {
-    margin-bottom: 6pt;
+    margin-bottom: 4pt !important;
     page-break-inside: avoid;
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
   }
 
   .job:last-child {
@@ -515,9 +574,30 @@ h3 {
     color: #444;
   }
 
+  .job-description {
+    font-size: 9pt;
+    margin-bottom: 4pt;
+  }
+
+  .job-info {
+    gap: 4pt;
+    margin-bottom: 4pt;
+    font-size: 8pt;
+  }
+
+  .job-achievements h4 {
+    font-size: 9pt;
+    margin-bottom: 2pt;
+  }
+
+  .job-achievements li {
+    font-size: 8pt;
+    margin-bottom: 2pt;
+  }
+
   /* Projects section */
   .project {
-    margin-bottom: 6pt;
+    margin-bottom: 4pt !important;
     page-break-inside: avoid;
   }
 
